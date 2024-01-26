@@ -2,7 +2,7 @@ import { useState } from 'react';
 // Write your Color component here
 
 const Color = ({ color, setSelectedColor }) => { // << Props.color alternative, according to Edwin. 
-  return <div onClick={() => setSelectedColor(color)} className={props.color}></div>;
+  return <div onClick={() => setSelectedColor(color)} className={color}></div>;
 };
 const App = () => {
   const [selectedColor, setSelectedColor] = useState(""); 
